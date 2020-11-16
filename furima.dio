@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-11-16T06:50:57.675Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="gNAASPuBQuIPBC-8GqYd" version="13.6.5">
+<mxfile host="65bd71144e" modified="2020-11-16T07:06:37.914Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="1m3uwn0t6UOLNtZFa_Qn" version="13.6.5">
     <diagram id="rLvc68XaruTGqxCbdvv6" name="ページ1">
         <mxGraphModel dx="1911" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -129,7 +129,7 @@
                 <mxCell id="15" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;" parent="14" vertex="1">
                     <mxGeometry width="30" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="password                     string  null : false " style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="14" vertex="1">
+                <mxCell id="16" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="14" vertex="1">
                     <mxGeometry x="30" width="330" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="88" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;exitX=0.993;exitY=0.033;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="46" edge="1">
@@ -225,7 +225,7 @@
                     <mxGeometry x="30" width="360" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="96" value="encrypted_password   string  null : false " style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="290" width="330" height="30" as="geometry"/>
+                    <mxGeometry x="40" y="280" width="330" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

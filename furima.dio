@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-11-16T07:06:37.914Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="1m3uwn0t6UOLNtZFa_Qn" version="13.6.5">
+<mxfile host="65bd71144e" modified="2020-11-16T07:45:45.449Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="rBDw5UFBh4mZ2_IWXuPx" version="13.6.5">
     <diagram id="rLvc68XaruTGqxCbdvv6" name="ページ1">
         <mxGraphModel dx="1911" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -84,7 +84,7 @@
                 <mxCell id="69" value="prefecture_id      integer   null : false" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="1" vertex="1">
                     <mxGeometry x="510" y="410" width="270" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="70" value="days_id　　       integer  null : false" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="1" vertex="1">
+                <mxCell id="70" value="day_id　　       integer  null : false" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="1" vertex="1">
                     <mxGeometry x="510" y="440" width="300" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="71" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#f0f0f0;exitX=0.319;exitY=0.097;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" source="32">
@@ -158,8 +158,8 @@
                 <mxCell id="92" value="building_name       string  " style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="1" vertex="1">
                     <mxGeometry x="550" y="750" width="280" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="93" value="phone_number      string  null : false    unique : true" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="1" vertex="1">
-                    <mxGeometry x="550" y="780" width="280" height="30" as="geometry"/>
+                <mxCell id="93" value="phone_number      string  null : false   " style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="1" vertex="1">
+                    <mxGeometry x="551" y="780" width="280" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="94" value="purchase               references   null : false  foreign_key : true" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="1" vertex="1">
                     <mxGeometry x="550" y="810" width="420" height="30" as="geometry"/>

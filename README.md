@@ -30,11 +30,11 @@ has_many    :purchases
 |  status_id     | integer     | null: false                    |
 |  cost_id       | integer     | null: false                    |
 |  prefecture_id | integer     | null: false                    |
-|  days_id       | integer     | null: false                    |
+|  day_id        | integer     | null: false                    |
 
 ### Association
 
-belong_to    :user
+belongs_to    :user
 has_one      :purchase
 
 ## purchases テーブル
@@ -46,8 +46,8 @@ has_one      :purchase
 
 ### Association
 
-belong_to    :item
-belong_to    :user
+belongs_to    :item
+belongs_to    :user
 has_one      :address
 
 ## Addresses テーブル
@@ -57,10 +57,10 @@ has_one      :address
 | prefecture_id  | integer    | null: false                     |
 | city           | string     | null: false                     |
 | building_name  | string     |                                 |
-| phone_number   | string     | null: false, unique: true       |
+| phone_number   | string     | null: false                     |
 | purchase       | references | null: false, foreign_key: true  |
 
 ### Association
 
-belong_to   :purchase
+belongs_to   :purchase
 

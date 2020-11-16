@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-11-16T07:45:45.449Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="rBDw5UFBh4mZ2_IWXuPx" version="13.6.5">
+<mxfile host="65bd71144e" modified="2020-11-16T07:56:02.785Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="E0O8mrzpo60FLI5yORf9" version="13.6.5">
     <diagram id="rLvc68XaruTGqxCbdvv6" name="ページ1">
         <mxGraphModel dx="1911" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -226,6 +226,9 @@
                 </mxCell>
                 <mxCell id="96" value="encrypted_password   string  null : false " style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="1">
                     <mxGeometry x="40" y="280" width="330" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="phone_number      string  null : false   " style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="1">
+                    <mxGeometry x="547" y="840" width="280" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

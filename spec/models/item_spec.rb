@@ -18,47 +18,47 @@ end
       @item.valid?
       expect(@item.errors.full_messages).to include("Image can't be blank")
     end
-    it '名前が空だと登録できない' do
+    it '名前が空だと登録できないこと' do
       @item.name = nil
       @item.valid?
       expect(@item.errors.full_messages).to include("Name can't be blank")
     end
-    it '説明文が空だと登録できない' do
+    it '説明文が空だと登録できないこと' do
       @item.description = nil
       @item.valid?
       expect(@item.errors.full_messages).to include("Description can't be blank")
     end
-    it 'カテゴリーが入力されていないと登録できない' do
+    it 'カテゴリーが入力されていないと登録できないこと' do
       @item.category_id = nil
       @item.valid?
       expect(@item.errors.full_messages).to include("Category is not a number")
     end
-    it '商品の状態が入力されていないと登録できない' do
+    it '商品の状態が入力されていないと登録できないこと' do
       @item.status_id = nil
       @item.valid?
       expect(@item.errors.full_messages).to include("Status is not a number")
     end
-    it '配送料の負担が入力されていないと登録できない' do
+    it '配送料の負担が入力されていないと登録できないこと' do
       @item.cost_id = nil
       @item.valid?
       expect(@item.errors.full_messages).to include("Cost is not a number")
   end
-    it '発送元の地域が入力されていないと登録でない' do
+    it '発送元の地域が入力されていないと登録でないこと' do
       @item.prefecture_id = nil
       @item.valid?
       expect(@item.errors.full_messages).to include("Prefecture is not a number")
   end
-    it '発送までの日数が入力されていないと登録できない'do
+    it '発送までの日数が入力されていないと登録できないこと'do
       @item.day_id = nil
       @item.valid?
       expect(@item.errors.full_messages).to include("Day is not a number")
   end
-    it '価格が空だと登録できない' do
+    it '価格が空だと登録できないこと' do
       @item.price = nil
       @item.valid?
       expect(@item.errors.full_messages).to include("Price can't be blank")
     end
-    it '価格が全角数字だと登録できない' do
+    it '価格が全角数字だと登録できないこと' do
       @item.price = '１０００'
       @item.valid?
       expect(@item.errors.full_messages).to include("Price is not a number")

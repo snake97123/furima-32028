@@ -1,6 +1,5 @@
 class Item < ApplicationRecord
-  
-  belongs_to   :user
+  belongs_to :user
   has_one_attached :image
 
   extend ActiveHash::Associations::ActiveRecordExtensions
@@ -8,10 +7,10 @@ class Item < ApplicationRecord
   belongs_to :status
   has_one_attached :image
 
-  validates  :price, presence: true, format: { with: /\A^[0-9]+$\z/,}, numericality: { greater_than_or_equal_to: 300, less_than_or_equal_to: 9999999 }
+  validates :price, presence: true, format: { with: /\A^[0-9]+$\z/ }, numericality: { greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 }
 
   with_options presence: true do
-    validates   :name  
+    validates   :name
     validates   :description
     validates   :image
   end
@@ -21,9 +20,5 @@ class Item < ApplicationRecord
     validates   :cost_id
     validates   :prefecture_id
     validates   :day_id
-    
   end
 end
-
-
-  

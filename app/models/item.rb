@@ -8,7 +8,7 @@ class Item < ApplicationRecord
   belongs_to :status
   has_one_attached :image
 
-  validates  :price, presence: true, format: { with: /\Aｎ^[0-9]+$\z/,}
+  validates  :price, presence: true, format: { with: /\A^[0-9]+$\z/,}, numericality: { greater_than_or_equal_to: 300, less_than_or_equal_to: 9999999 }
 
   with_options presence: true do
     validates   :name  

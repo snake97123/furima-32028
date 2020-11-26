@@ -1,35 +1,36 @@
 class PurchasesController < ApplicationController
+  before_action :authenticate_user!, only: [:index]
+
   def index
-    @item = Item.find_by(params[:id])
+    @item = Item.find(params[:item_id])
     @purchase_card = PurchaseCard.new
+    redirect_to root_path if current_user == @item.user || @item.purchase.present?
   end
-  
+
   def create
-     @item = Item.find_by(params[:id])
-     @purchase_card = PurchaseCard.new(card_params)
-     if @purchase_card.valid?
+    @item = Item.find(params[:item_id])
+    @purchase_card = PurchaseCard.new(card_params)
+    if @purchase_card.valid?
       pay_item
       @purchase_card.save
       redirect_to root_path
-     else
+    else
       render action: :index
-     end
- end
+    end
+  end
 
   private
 
   def card_params
-    params.require(:purchase_card).permit(:post_code, :prefecture_id, :city, :block, :building_name, :phone_number).merge(user_id:current_user.id, item_id:@item.id, token: params[:token])
+    params.require(:purchase_card).permit(:post_code, :prefecture_id, :city, :block, :building_name, :phone_number).merge(user_id: current_user.id, item_id: @item.id, token: params[:token])
   end
 
   def pay_item
-    Payjp.api_key = ENV["PAYJP_SECRET_KEY"]
-    Payjp::Charge.create( 
-       amount: @item.price,
-       card: card_params[:token],
-       currency: 'jpy'
+    Payjp.api_key = ENV['PAYJP_SECRET_KEY']
+    Payjp::Charge.create(
+      amount: @item.price,
+      card: card_params[:token],
+      currency: 'jpy'
     )
   end
 end
-
-

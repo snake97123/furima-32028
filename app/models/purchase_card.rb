@@ -9,6 +9,8 @@ class PurchaseCard
     validates  :prefecture_id, numericality: { other_than: 1 }
     validates  :phone_number, format: { with: /\A^(0{1}\d{9,10})$\z/ }
     validates  :token
+    validates  :item_id
+    validates  :user_id
   end
 
   def save

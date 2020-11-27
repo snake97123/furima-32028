@@ -66,5 +66,17 @@ RSpec.describe PurchaseCard, type: :model do
       @purchase_card.valid?
       expect(@purchase_card.errors.full_messages).to include('Phone number is invalid')
     end
+
+    it 'user_idが空だと登録できないこと' do
+      @purchase_card.user_id = nil
+      @purchase_card.valid?
+      expect(@purchase_card.errors.full_messages).to include("User can't be blank")
+    end
+
+    it 'item_idが空だと登録できないこと' do
+      @purchase_card.item_id = nil
+      @purchase_card.valid?
+      expect(@purchase_card.errors.full_messages).to include("Item can't be blank")
+    end
   end
 end
